@@ -233,7 +233,7 @@ script:
   ```
 
 #### How to make an AWS bucket:
-1. create bucket- cf-401-maddybucket
+1. create bucket- 401-travisbucket1
 2. console home
 3. users
 4. Add user - cd-401-secondary, check programatic access
