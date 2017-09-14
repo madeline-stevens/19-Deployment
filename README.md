@@ -201,13 +201,13 @@ AWS_SECRET_ACCESS_KEY='<your_key>'
  ```
 `http GET :5000/api/gallery/1234-5678   'Authorization:Bearer myWonderfulToken'`
 ```
-* New package: aws-sdk - allows our app to interact with AWS
-* Added a .travis.yml file
+* New package: aws-sdk - allows our app to interact with AWS.
 * New package: del - creates binary representation of an image, del deletes that stuff after hte image is in allows
 * New package: multer- allows us to have a form where we can upload an image and it's going to get sent as form data not raw json cause we can't translate a raw image as raw json we have to send it as ....breaks it down. its middleware. uses binary data to upload to s3 then deletes that binary file.
 * In server.js we 'server.stop = () => {'' the server and .close() the mongoConnection.
 * Bucket name: cf-401-maddybucket
 * Signed up for billing email notifications, for the 1% off chance that someone gets ahold of my AWS key.
+* Added a .travis.yml file- I think of the .travis.yml file as the package.json for travis. It's how we want our builds to be executed.
 
 #### 9/14:
 * ADDED a .travis.yml file with the following:
@@ -245,11 +245,11 @@ script:
 
 
 #### <a name="resources"></a>Any resources that helped me complete this project:
-* Postman
 * AWS
+* Travis
 
 #### Notes to myself:
 *
 
 ### <a name="collaborators"></a>Collaborators:
-Said! Isaiah! Isaiah helped a ton with writing routes!
+Said! Isaiah!
