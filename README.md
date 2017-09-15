@@ -255,4 +255,4 @@ script:
 * trying to test travis...
 
 ### <a name="collaborators"></a>Collaborators:
-Said! Isaiah!
+Said! Isaiah! Michelle!
