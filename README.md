@@ -171,6 +171,7 @@ http POST localhost:3000/api/gallery name=name desc=password
   * npm install faker (this gives provides us with fake data for testing things like user info- names, addresses, phone numbers, etc) - DONE
   * npm install --save multer (for uploading files)-- DONE
   * npm install aws-sdk (for interacting with AWS) --DONE
+  * npm install aws-sdk-mock --save-dev (I dont know yet) --DONE
 
 #### <a name="generalnotes"></a>General notes/changes made from previous projects:
 * How to configure this labs' .env file:
