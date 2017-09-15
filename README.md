@@ -208,6 +208,7 @@ AWS_SECRET_ACCESS_KEY='<your_key>'
 * Bucket name: cf-401-maddybucket
 * Signed up for billing email notifications, for the 1% off chance that someone gets ahold of my AWS key.
 * Added a .travis.yml file- I think of the .travis.yml file as the package.json for travis. It's how we want our builds to be executed.
+* Learning so much about travis and heroku........
 
 #### 9/14:
 * ADDED a .travis.yml file with the following:
@@ -234,7 +235,7 @@ script:
 
 #### How to make an AWS bucket:
 1. create bucket- 401-travisbucket1
-  Heroku staging bucket- 401-lab19-staging 
+  Heroku staging bucket- 401-lab19-staging
 2. console home
 3. users
 4. Add user - cd-401-secondary, check programatic access
