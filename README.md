@@ -171,6 +171,7 @@ http POST localhost:3000/api/gallery name=name desc=password
   * npm install faker (this gives provides us with fake data for testing things like user info- names, addresses, phone numbers, etc) - DONE
   * npm install --save multer (for uploading files)-- DONE
   * npm install aws-sdk (for interacting with AWS) --DONE
+  * npm install aws-sdk-mock --save-dev (I dont know yet) --DONE
 
 #### <a name="generalnotes"></a>General notes/changes made from previous projects:
 * How to configure this labs' .env file:
@@ -208,6 +209,7 @@ AWS_SECRET_ACCESS_KEY='<your_key>'
 * Bucket name: cf-401-maddybucket
 * Signed up for billing email notifications, for the 1% off chance that someone gets ahold of my AWS key.
 * Added a .travis.yml file- I think of the .travis.yml file as the package.json for travis. It's how we want our builds to be executed.
+* Learning so much about travis and heroku........
 
 #### 9/14:
 * ADDED a .travis.yml file with the following:
@@ -234,7 +236,7 @@ script:
 
 #### How to make an AWS bucket:
 1. create bucket- 401-travisbucket1
-  Heroku staging bucket- 401-lab19-staging 
+  Heroku staging bucket- 401-lab19-staging
 2. console home
 3. users
 4. Add user - cd-401-secondary, check programatic access

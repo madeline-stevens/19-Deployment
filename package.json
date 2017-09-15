@@ -44,14 +44,15 @@
   "author": "Madeline Stevens",
   "license": "MIT",
   "devDependencies": {
-    "debug": "^3.0.1",
     "eslint": "^4.5.0",
     "faker": "^4.1.0",
     "jest": "^20.0.4",
     "superagent": "^3.6.0"
   },
   "dependencies": {
+    "debug": "^3.0.1",
     "aws-sdk": "^2.115.0",
+    "aws-sdk-mock": "^1.7.0",
     "bcrypt": "^1.0.3",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
