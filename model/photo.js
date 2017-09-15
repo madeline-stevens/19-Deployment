@@ -3,11 +3,9 @@
 const fs = require('fs');
 const del = require('del');
 const path = require('path');
-const Gallery = require('./gallery');
 const mongoose = require('mongoose');
 const tempDir = `${__dirname}/../temp`;
 const s3UploadProm = require('../lib/aws-s3');
-const debug = require('debug')('cfgram:Photo');
 
 const Photo = mongoose.Schema({
   name: { type: String, required: true },
@@ -42,7 +40,7 @@ Photo.statics.upload = function(req) {
           imageURI: s3Data.Location,
           userId: req.user._id,
           galleryId: req.body.galleryId
-        }
+        };
         resolve(photoData);
       })
       .catch(reject);

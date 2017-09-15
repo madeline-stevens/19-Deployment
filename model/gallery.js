@@ -1,7 +1,6 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const debug = require('debug')('cfgram:Gallery');
 
 
 const Gallery = mongoose.Schema({

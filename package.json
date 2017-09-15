@@ -41,7 +41,7 @@
     "uploads",
     "codez"
   ],
-  "author": "Code Fellows, LLC",
+  "author": "Madeline Stevens",
   "license": "MIT",
   "devDependencies": {
     "debug": "^3.0.1",
