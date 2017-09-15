@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
@@ -9,7 +9,7 @@ const User = mongoose.Schema({
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   email: { type: String, required: true },
-  findHash: { type: String, unique: true },
+  findHash: { type: String, unique: true }
   // friends: [{ type: mongoose.Schema.Types.ObjectId, ref: 'user' }]
 });
 
@@ -48,13 +48,13 @@ User.methods.generateFindHash = function() {
       this.save()
         .then(() => resolve(this.findHash))
         .catch(err => {
-          if(tries > 3) return reject(new Error('authorization failed; could not validate findHash'));
-          tries++;
-          _generateFindHash();
+          if(tries < 3) {
+            tries++;
+            _generateFindHash.call(this);
+          }
+          if(err) return reject(err);
         });
     };
-
-    _generateFindHash();
   });
 };
 
@@ -71,4 +71,4 @@ User.methods.generateToken = function() {
   });
 };
 
-module.exports = mongoose.model('user', User)
+module.exports = mongoose.model('user', User);
