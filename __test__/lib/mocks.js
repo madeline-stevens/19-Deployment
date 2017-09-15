@@ -20,7 +20,7 @@ mocks.user.createOne = function() {
   return user.generatePasswordHash(result.password)
     .then(user => {
       this.result.user = user;
-      return user.save()
+      return user.save();
     })
     .then(user => user.generateToken())
     .then(token => {

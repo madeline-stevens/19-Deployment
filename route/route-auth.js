@@ -1,6 +1,6 @@
 'use strict';
 
-const jsonParser = require('body-parser').json()
+const jsonParser = require('body-parser').json();
 const debug = require('debug')('cfgram:route-auth');
 const errorHandler = require('../lib/error-handler');
 const basicAuth = require('../lib/basic-auth-middleware');
