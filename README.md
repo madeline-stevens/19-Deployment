@@ -234,6 +234,7 @@ script:
 
 #### How to make an AWS bucket:
 1. create bucket- 401-travisbucket1
+  Heroku staging bucket- 401-lab19-staging 
 2. console home
 3. users
 4. Add user - cd-401-secondary, check programatic access
