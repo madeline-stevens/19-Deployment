@@ -24,7 +24,7 @@ module.exports = function(router) {
       .catch(err => errorHandler(err, req, res));
   });
 
-  router.get('/api/signin', basicAuth, (req, res, next) => {
+  router.get('/api/signin', basicAuth, (req, res) => {
     debug('GET /api/signin');
 
     return User.findOne({ username: req.auth.username })
