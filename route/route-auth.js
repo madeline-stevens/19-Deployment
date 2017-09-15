@@ -1,6 +1,6 @@
 'use strict';
 
-const jsonParser = require('body-parser').json()
+const jsonParser = require('body-parser').json();
 const debug = require('debug')('cfgram:route-auth');
 const errorHandler = require('../lib/error-handler');
 const basicAuth = require('../lib/basic-auth-middleware');
@@ -24,7 +24,7 @@ module.exports = function(router) {
       .catch(err => errorHandler(err, req, res));
   });
 
-  router.get('/api/signin', basicAuth, (req, res, next) => {
+  router.get('/api/signin', basicAuth, (req, res) => {
     debug('GET /api/signin');
 
     return User.findOne({ username: req.auth.username })
