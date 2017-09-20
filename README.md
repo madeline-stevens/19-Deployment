@@ -1,8 +1,8 @@
 ### Documentation
 
-#### Table of Contents:
+#### <a name="tableofcontents"></a>Table of contents:
 
-* [What this project does](#whatthisprojectdoes)
+* [What this project does](#whatthisproject)
 * [Learning Objectives](#learningobjectives)
 * [Steps for me to complete](#stepsforme)
 * [How another dev could 'get started' with my api on their own](#devsteps)
@@ -12,7 +12,7 @@
 * [Any resources that helped me complete this project](#resources)
 * [Collaborators](#collaborators)
 
-### <a name="whatthisprojectdoes"></a>What this project does:
+### <a name="whatthisproject"></a>What this project does:
 
 Today we are practicing deploying through Heroku, using travis CI (Continuous Integration) to listen for changes on a branch.
 
@@ -179,8 +179,8 @@ http POST localhost:3000/api/gallery name=name desc=password
 
 ```
 PORT='8000'
-MONGODB_URI='mongodb://localhost/<db_name>'
-APP_SECRET='yourdbsecret'
+MONGODB_URI='mongodb://localhost/<db_name>' (for )
+APP_SECRET='yourdbsecret' (for decoding our web tokens)
 AWS_BUCKET='<your_bucket_name>'
 AWS_ACCESS_KEY_ID='<your_key>'
 AWS_SECRET_ACCESS_KEY='<your_key>'
@@ -254,5 +254,5 @@ script:
 #### Notes to myself:
 * trying to test travis...
 
-### <a name="collaborators"></a>Collaborators:
+### [collaborators](#tableofcontents):
 Said! Isaiah! Michelle!
