@@ -1,8 +1,8 @@
 ### Documentation
 
-#### Table of Contents:
+#### <a name="tableofcontents"></a>Table of contents:
 
-* [What this project does](#whatthisprojectdoes)
+* [What this project does](#whatthisproject)
 * [Learning Objectives](#learningobjectives)
 * [Steps for me to complete](#stepsforme)
 * [How another dev could 'get started' with my api on their own](#devsteps)
@@ -12,7 +12,7 @@
 * [Any resources that helped me complete this project](#resources)
 * [Collaborators](#collaborators)
 
-### <a name="whatthisprojectdoes"></a>What this project does:
+### <a name="whatthisproject"></a>What this project does:
 
 Today we are practicing deploying through Heroku, using travis CI (Continuous Integration) to listen for changes on a branch.
 
@@ -171,6 +171,7 @@ http POST localhost:3000/api/gallery name=name desc=password
   * npm install faker (this gives provides us with fake data for testing things like user info- names, addresses, phone numbers, etc) - DONE
   * npm install --save multer (for uploading files)-- DONE
   * npm install aws-sdk (for interacting with AWS) --DONE
+  * npm install aws-sdk-mock --save-dev (I dont know yet) --DONE
 
 #### <a name="generalnotes"></a>General notes/changes made from previous projects:
 * How to configure this labs' .env file:
@@ -178,8 +179,8 @@ http POST localhost:3000/api/gallery name=name desc=password
 
 ```
 PORT='8000'
-MONGODB_URI='mongodb://localhost/<db_name>'
-APP_SECRET='yourdbsecret'
+MONGODB_URI='mongodb://localhost/<db_name>' (for )
+APP_SECRET='yourdbsecret' (for decoding our web tokens)
 AWS_BUCKET='<your_bucket_name>'
 AWS_ACCESS_KEY_ID='<your_key>'
 AWS_SECRET_ACCESS_KEY='<your_key>'
@@ -208,6 +209,7 @@ AWS_SECRET_ACCESS_KEY='<your_key>'
 * Bucket name: cf-401-maddybucket
 * Signed up for billing email notifications, for the 1% off chance that someone gets ahold of my AWS key.
 * Added a .travis.yml file- I think of the .travis.yml file as the package.json for travis. It's how we want our builds to be executed.
+* Learning so much about travis and heroku........
 
 #### 9/14:
 * ADDED a .travis.yml file with the following:
@@ -234,7 +236,7 @@ script:
 
 #### How to make an AWS bucket:
 1. create bucket- 401-travisbucket1
-  Heroku staging bucket- 401-lab19-staging 
+  Heroku staging bucket- 401-lab19-staging
 2. console home
 3. users
 4. Add user - cd-401-secondary, check programatic access
@@ -252,5 +254,5 @@ script:
 #### Notes to myself:
 * trying to test travis...
 
-### <a name="collaborators"></a>Collaborators:
-Said! Isaiah!
+### [collaborators](#tableofcontents):
+Said! Isaiah! Michelle!
